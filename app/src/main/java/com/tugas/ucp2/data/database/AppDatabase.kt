@@ -5,23 +5,29 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.tugas.ucp2.data.dao.DokterDao
+import com.tugas.ucp2.data.dao.JadwalDao
 import com.tugas.ucp2.data.entity.Dokter
+import com.tugas.ucp2.data.entity.Jadwal
 
 
-@Database(entities = [Dokter::class], version = 1, exportSchema = false)
-abstract class DktrDatabase : RoomDatabase() {
+@Database(entities = [Dokter::class, Jadwal::class], version = 1, exportSchema = false)
+abstract class AppDatabase : RoomDatabase() {
 
-    abstract fun DokterDao(): DokterDao
+    // Deklarasi DAO untuk Dokter
+    abstract fun dokterDao(): DokterDao
+
+    // Deklarasi DAO untuk Jadwal
+    abstract fun jadwalDao(): JadwalDao
 
     companion object {
         @Volatile
-        private var Instance: DktrDatabase? = null
+        private var Instance: AppDatabase? = null
 
-        fun getDatabase(context: Context): DktrDatabase {
+        fun getDatabase(context: Context): AppDatabase{
             return (Instance ?: synchronized(this){
                 Room.databaseBuilder(
                     context.applicationContext,
-                    DktrDatabase::class.java, //class database
+                    AppDatabase::class.java, //class database
                     "KrsDatabase" //nama database
                 )
                     .build().also { Instance = it }
