@@ -1,10 +1,10 @@
 package com.tugas.ucp2.data.dao
 
-import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 import com.tugas.ucp2.data.entity.Dokter
+import kotlinx.coroutines.flow.Flow
 
 
 @Dao
@@ -13,9 +13,9 @@ interface DokterDao {
     suspend fun insertDokter(dokter: Dokter)
 
     @Query("SELECT * FROM dokter")
-    fun getAllDokters(): LiveData<List<Dokter>>
+    fun getAllDokters(): Flow<List<Dokter>>  // Menggunakan Flow sebagai pengganti LiveData
 
     // Mengambil data dokter berdasarkan ID
     @Query("SELECT * FROM dokter WHERE id = :dokterId")
-    suspend fun getDokterById(dokterId: Int): Dokter?
+    fun getDokterById(dokterId: Int): Flow<Dokter?>  // Menggunakan Flow sebagai pengganti LiveData
 }

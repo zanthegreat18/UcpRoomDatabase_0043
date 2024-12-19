@@ -1,11 +1,12 @@
 package com.tugas.ucp2.data.repositor
 
-import androidx.lifecycle.LiveData
+
 import com.tugas.ucp2.data.entity.Dokter
 import kotlinx.coroutines.flow.Flow
 
+
 interface RepositoriDktr {
-    suspend fun insertDktr(dokter: Dokter)
-    suspend fun getDktrById(id: Int): Dokter?
-    fun getAllDktr(): LiveData<List<Dokter>>
+    suspend fun insertDokter(dokter: Dokter)
+    fun getAllDktr(): Flow<List<Dokter>>
+    fun getDktr(dokterId: Int): Flow<Dokter?>
 }

@@ -1,13 +1,12 @@
 package com.tugas.ucp2.data.dao
 
-import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import androidx.room.Update
-import com.tugas.ucp2.data.entity.Dokter
 import com.tugas.ucp2.data.entity.Jadwal
+import kotlinx.coroutines.flow.Flow
 
 
 @Dao
@@ -22,9 +21,9 @@ interface JadwalDao {
     suspend fun updateJadwal(jadwal: Jadwal)
 
     @Query("SELECT * FROM jadwal")
-    fun getAllJadwal(): LiveData<List<Jadwal>>
+    fun getAllJadwal(): Flow<List<Jadwal>>  // Menggunakan Flow sebagai pengganti LiveData
 
-    // Mengambil data dokter berdasarkan ID
+    // Mengambil data jadwal berdasarkan ID
     @Query("SELECT * FROM jadwal WHERE id = :jadwalId")
-    suspend fun getJadwalById(jadwalId: Int): Jadwal?
+    fun getJadwalById(jadwalId: Int): Flow<Jadwal?>  // Menggunakan Flow sebagai pengganti LiveData
 }
