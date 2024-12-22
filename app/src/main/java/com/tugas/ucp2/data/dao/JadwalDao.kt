@@ -11,19 +11,22 @@ import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface JadwalDao {
-    @Insert
-    suspend fun insertJadwal(jadwal: Jadwal)
 
-    @Delete
-    suspend fun deleteJadwal(jadwal: Jadwal)
+    @Insert
+
+    suspend fun insertJadwal(jadwal: Jadwal)
 
     @Update
     suspend fun updateJadwal(jadwal: Jadwal)
 
-    @Query("SELECT * FROM jadwal")
-    fun getAllJadwal(): Flow<List<Jadwal>>  // Menggunakan Flow sebagai pengganti LiveData
+    @Delete
+    suspend fun deleteJadwal(jadwal: Jadwal)
 
-    // Mengambil data jadwal berdasarkan ID
-    @Query("SELECT * FROM jadwal WHERE id = :jadwalId")
-    fun getJadwalById(jadwalId: Int): Flow<Jadwal?>  // Menggunakan Flow sebagai pengganti LiveData
+    @Query("SELECT * FROM jadwal ORDER BY namaPasien ASC")
+    fun getAllJadwal(): Flow<List<Jadwal>>
+
+    @Query("SELECT * FROM jadwal WHERE idJadwal = :idJadwal")
+    fun getJadwalById(idJadwal: Int): Flow<Jadwal>
+
+
 }
