@@ -1,5 +1,6 @@
 package com.tugas.ucp2.data.entity
 
+
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -12,5 +13,5 @@ data class Dokter(
     val spesialis: String,
     val klinik: String,
     val noHp: String,
-    val jamkerja: String
+    val jamKerja: String
 )
