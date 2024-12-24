@@ -11,26 +11,39 @@
 5.Hasil tambah Dokter 
 ![hasilinsert](https://github.com/user-attachments/assets/53e97553-e3a7-494f-b3fe-858a72eb1b00)
 
-5.1.Dropdown menu ![dropdowndokter](https://github.com/user-attachments/assets/dbe767a7-5eba-4105-b8b6-294da867b2d8)
+6.Validate Dokter 
+![validate1](https://github.com/user-attachments/assets/073328a3-e567-4375-b942-fdac503fa4d8)
 
-6.ValidasiDokter ![validasidokter](https://github.com/user-attachments/assets/15399433-d7de-4a3e-8942-c186a6e701da)
+7.Home Jadwal
+![homejadwal2](https://github.com/user-attachments/assets/24477e20-d1d1-42a4-9bdb-4006c5458b4c)
 
-7.Home Jadwal 
-![homejadwal](https://github.com/user-attachments/assets/e2c4ec7b-6db4-4236-8a5f-45096c212977)
+8.Tampilan Insert jadwal 
+![jadwalinsert](https://github.com/user-attachments/assets/6a12d20a-6cda-4b65-8ab4-88d02924654f)
 
-8.insert jadwal ![insertjadwal](https://github.com/user-attachments/assets/d00f46bf-d2b4-454f-b611-eaad8f2e259a)
+9.Detail Jadwal ![detailjadwal2](https://github.com/user-attachments/assets/1e49aa23-0c49-425d-a8bf-945977dcd8db)
 
-9.hasil insert jadwal 
-![insertjadwal](https://github.com/user-attachments/assets/26ca08f3-f547-4e5d-b947-55e005881b56)
+10.Edit Jadwal ![hasileditjdwl1](https://github.com/user-attachments/assets/81855545-af41-49a9-b291-e07d58fa715b)
 
-10.Tampilan Detail jadwal ![tampilandetailjdwl](https://github.com/user-attachments/assets/943509be-f660-4618-b79a-a2ee2d3e4ca3)
+11.Hasil Edit Jadwal 2 ![hasiledit2](https://github.com/user-attachments/assets/8c38e778-9d27-44b1-86bb-3b62621bb4e8)
 
-11.Hasil Edit jadwal 
-![hasileditjdwal](https://github.com/user-attachments/assets/c8034527-efbc-41d0-8810-c0a766889a81)
+12. Hapus Jadwal ![hapus](https://github.com/user-attachments/assets/2bf22b5d-bac1-49c4-800a-35f97e75a4a4)
 
-12.fungsi delete ![deleteawal](https://github.com/user-attachments/assets/7d85bec3-2768-4c8e-b729-401d21c0ddde)
+13.Sebelum Hapus Jadwal ![deletebifor](https://github.com/user-attachments/assets/34e7c800-9e72-48f6-a9c4-e6e55cdd9604)
 
-13.Validate Delete 
+14.Sesudah Hapus ![sesudahbifor](https://github.com/user-attachments/assets/84f65c06-023f-4bf1-9c46-6dd8a5c00fa8)
+
+15.DropDown Untuk Dokter ![dropdown dokter](https://github.com/user-attachments/assets/7e5021a7-5ae0-4082-9775-ebe6bd9fcade)
+
+16.DropDown Pasien Edit ![dropdownedit](https://github.com/user-attachments/assets/49d171a5-c701-42d1-b1a9-67e0fdaf3f17)
+
+
+
+
+
+
+
+
+
 
 
 
