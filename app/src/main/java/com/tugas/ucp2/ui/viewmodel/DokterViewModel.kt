@@ -9,15 +9,6 @@ import com.tugas.ucp2.data.entity.Dokter
 import com.tugas.ucp2.data.repositor.RepositoryApp
 import kotlinx.coroutines.launch
 
-data class DokterEvent(
-    val id: Int = 0,
-    val nama: String = "",
-    val spesialis: String = "",
-    val klinik: String = "",
-    val noHp: String = "",
-    val jamKerja: String = ""
-)
-
 class DokterViewModel(
     private val repositoryApp: RepositoryApp
 ) : ViewModel() {
@@ -78,6 +69,15 @@ data class DokterUiState(
     val dokterEvent: DokterEvent = DokterEvent(),
     val isEntryValid: FormErrorStateDokter = FormErrorStateDokter(),
     val snackBarMessage: String? = null,
+)
+
+data class DokterEvent(
+    val id: Int = 0,
+    val nama: String = "",
+    val spesialis: String = "",
+    val klinik: String = "",
+    val noHp: String = "",
+    val jamKerja: String = ""
 )
 
 data class FormErrorStateDokter(
