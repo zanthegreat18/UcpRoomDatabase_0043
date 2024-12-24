@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.tugas.ucp2.ui.navigasi.PengelolaHalamanHome
 import com.tugas.ucp2.ui.theme.UCP2Theme
 
 class MainActivity : ComponentActivity() {
@@ -19,9 +20,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             UCP2Theme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                Scaffold(modifier = Modifier.fillMaxSize()) {innerPadding ->
+                    PengelolaHalamanHome(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
